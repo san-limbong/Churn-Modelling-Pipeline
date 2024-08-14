@@ -1,6 +1,6 @@
 FROM tensorflow/serving:latest
      
-COPY ./output/serving_model /models/churn-model
+COPY ./san-limbong-pipeline/serving_model /models/churn-model
 # COPY ./config /model_config
 ENV MODEL_NAME=churn-model
  
