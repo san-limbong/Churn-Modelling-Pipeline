@@ -1,6 +1,6 @@
 FROM tensorflow/serving:latest
 
-COPY ./san-limbong-pipeline/serving_model /models/cc-model
+COPY ./san-limbong-pipeline/serving_model /models/churn-model
 
 ENV MODEL_NAME=churn-model
 ENV PORT=8501
