@@ -1,0 +1,2 @@
+* text=auto
+. filter=lfs diff=lfs merge=lfs -text
