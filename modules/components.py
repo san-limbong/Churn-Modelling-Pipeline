@@ -96,8 +96,8 @@ def init_components(
     slicing_specs=[
         tfma.SlicingSpec(), 
         tfma.SlicingSpec(feature_keys=[
-            "gender",
-            "Partner"
+            "Geography",
+            "Gender"
         ])
     ]
     
