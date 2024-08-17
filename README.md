@@ -24,9 +24,13 @@ Machine learning pipeline dibuat menggunakan komponen yang sebagai berikut:
 - Resolver
 - Evaluator
 - Pusher
+  
 Nb: Seluruh komponen di atas harus dijalankan menggunakan Pipeline Orchestrator bernama Apache Beam
 
 # Pemantauan Sistem Machine Learning Menggunakan Prometheus
+
+![san-limbong-monitoring](https://github.com/user-attachments/assets/26b67f3f-c7e9-4cad-b164-6a47bed35f31)
+
 
 # Menjalankan dengan docker
 
