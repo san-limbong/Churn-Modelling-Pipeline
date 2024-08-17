@@ -16,6 +16,18 @@
 | Web app | Tautan web app [Churn-model](https://churn-modelling-pipeline-production.up.railway.app/v1/models/churn-model/metadata)|
 | Monitoring | Pemantauan layanan ini dilakukan menggunakan Prometheus, sebuah layanan sumber terbuka. Hal ini memungkinkan pemantauan perubahan, seperti perubahan jumlah permintaan, secara efektif. |
 
+# Sekilas Mengenai Pipeline Orchestrator
+Machine learning pipeline terdiri dari berbagai proses yang saling bergantung dan harus dilakukan dalam urutan yang benar. Pipeline orchestrator bertugas memastikan bahwa semua komponen dijalankan sesuai urutan yang ditentukan.
+
+![beam](https://github.com/user-attachments/assets/a3924295-09ee-46df-9950-fb9cb98e37e3)
+
+Pipeline orchestration mengelola alur kerja berdasarkan ketergantungan tugas dalam grafik pipeline yang bersifat directed dan acyclic. "Directed" berarti alur kerja mengikuti ketergantungan tugas, sedangkan "acyclic" berarti tidak ada siklus dalam alur kerja yang menghubungkan kembali ke tugas yang telah diselesaikan. Karena sifat-sifat ini, pipeline orchestration sering disebut sebagai directed acyclic graphs (DAGs).
+
+TFX sebagai pipeline machine learning end-to-end mendukung berbagai pipeline orchestrator, seperti Apache Beam, Apache Airflow, dan Kubeflow Pipeline. Dalam proyek ini, kita akan menggunakan Apache Beam sebagai pipeline orchestrator untuk mengatur alur kerja pipeline machine learning.
+
+Perlu diketahui bahwa Apache Beam adalah salah satu dependensi yang secara otomatis terinstal saat Anda menginstal TFX, sehingga Anda bisa langsung menggunakannya tanpa perlu instalasi tambahan.
+
+
 # Proyek Menggunakan TensorFlow Extended (TFX) untuk Membuat Machine Learning Pipeline
 Machine learning pipeline dibuat menggunakan komponen yang sebagai berikut:
 - ExampleGen
@@ -28,7 +40,7 @@ Machine learning pipeline dibuat menggunakan komponen yang sebagai berikut:
 - Evaluator
 - Pusher
   
-Nb: Seluruh komponen di atas harus dijalankan menggunakan Pipeline Orchestrator bernama Apache Beam
+Nb: Seluruh komponen di atas dijalankan menggunakan Pipeline Orchestrator yakni Apache Beam
 
 # Pemantauan Sistem Machine Learning Menggunakan Prometheus
 
