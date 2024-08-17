@@ -13,7 +13,7 @@
 | Metrik evaluasi | Metrik yang digunakan meliputi Area Under Curve (AUC) untuk menilai area di bawah kurva ROC, False Positive untuk menghitung kesalahan klasifikasi data negatif sebagai positif, False Negative untuk menghitung kesalahan klasifikasi data positif sebagai negatif, True Positive untuk mengukur klasifikasi positif yang benar, True Negative untuk mengukur klasifikasi negatif yang benar, dan Binary Accuracy untuk mengukur proporsi prediksi yang benar dalam masalah klasifikasi biner. |
 | Performa model | Model ini menunjukkan kinerja yang sangat baik pada data pelatihan dengan nilai loss sebesar 0.0414 dan akurasi binary sebesar 98.52%. Namun, pada data validasi, performanya menurun, dengan nilai loss sebesar 2.0221 dan akurasi binary sebesar 80.87%. Perbedaan performa yang cukup besar antara data pelatihan dan data validasi menunjukkan bahwa model mengalami overfitting. |
 | Opsi deployment | Tahap deployment dilakukan menggunakan Railway, sebuah platform yang memungkinkan para pengembang untuk dengan mudah menerapkan aplikasi, termasuk model pembelajaran mesin, ke lingkungan produksi. |
-| Web app | Tautan web app [Churn-model](https://churn-modelling-pipeline-production.up.railway.app/v1/models/churn-model/metadata)|
+| Web app | Tautan web app [Churn-model](https://churn-modelling-pipeline-production.up.railway.app/v1/models/churn-model/metadata)| (Telah dinonaktifkan, karena keterbatasan sumber daya)
 | Monitoring | Pemantauan layanan ini dilakukan menggunakan Prometheus, sebuah layanan sumber terbuka. Hal ini memungkinkan pemantauan perubahan, seperti perubahan jumlah permintaan, secara efektif. |
 
 # Sekilas Mengenai Pipeline Orchestrator
