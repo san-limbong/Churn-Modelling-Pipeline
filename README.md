@@ -1,7 +1,4 @@
-# Submission 2: Churn Modelling
-Nama: San Antonio Limbong
-
-Username dicoding: san-limbong
+# Proyek Pengembangan dan Pengoperasian Sistem Machine Learning
 
 | | Deskripsi |
 | ----------- | ----------- |
@@ -16,6 +13,20 @@ Username dicoding: san-limbong
 | Web app | Tautan web app [Churn-model](https://churn-modelling-pipeline-production.up.railway.app/v1/models/churn-model/metadata)|
 | Monitoring | Pemantauan layanan ini dilakukan menggunakan Prometheus, sebuah layanan sumber terbuka. Hal ini memungkinkan pemantauan perubahan, seperti perubahan jumlah permintaan, secara efektif. |
 
+# Proyek Menggunakan TensorFlow Extended (TFX) untuk Membuat Machine Learning Pipeline
+Machine learning pipeline dibuat menggunakan komponen yang sebagai berikut:
+- ExampleGen
+- StatisticGen
+- SchemaGen
+- ExampleValidator
+- Transform
+- Trainer
+- Resolver
+- Evaluator
+- Pusher
+Nb: Seluruh komponen di atas harus dijalankan menggunakan Pipeline Orchestrator bernama Apache Beam
+
+# Pemantauan Sistem Machine Learning Menggunakan Prometheus
 
 # Menjalankan dengan docker
 
