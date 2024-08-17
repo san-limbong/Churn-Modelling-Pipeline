@@ -1,4 +1,7 @@
-# Proyek Pengembangan dan Pengoperasian Sistem Machine Learning
+# Proyek Pengembangan dan Pengoperasian Sistem Machine Learning Pipeline Menggunakan Apache Beam
+
+![dataset-cover churn](https://github.com/user-attachments/assets/9bd2e156-185c-41bf-af33-dc2cc7041ba7)
+
 
 | | Deskripsi |
 | ----------- | ----------- |
